@@ -1,0 +1,47 @@
+.section__content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: $pd-6 $pd-3;
+}
+
+.section__heading {
+  text-align: center;
+  font-size: $fs-3;
+  font-weight: $fw-3;
+  letter-spacing: $ls-1;
+  margin: $mg-1 0;
+}
+
+.section__heading-sub {
+  text-align: center;
+  font-size: $fs-1;
+  font-style: italic;
+  opacity: 0.6;
+  margin: $mg-2 0;
+}
+
+.section__heading--white {
+  @extend .section__heading;
+  color: $color-white-1;
+}
+
+.section__heading-sub--white {
+  @extend .section__heading-sub;
+  color: $color-white-1;
+}
+
+%center-div-flex {
+  justify-content: center;
+  align-items: center;
+}
+
+%btnStyle {
+  @include color-bgc($color-white-1, $color-black-1);
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+%btnHoverStyle {
+  @include color-bgc($color-black-1, $color-grey-1);
+}

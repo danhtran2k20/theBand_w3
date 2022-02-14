@@ -1,0 +1,34 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+button,
+input {
+  font-family: "Lato", sans-serif;
+  font-size: $fs-1;
+  line-height: $lh-0;
+  color: $color-black-1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul li {
+  list-style-type: none;
+}
+

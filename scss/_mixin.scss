@@ -1,0 +1,12 @@
+@mixin color-bgc($color, $bgc) {
+  color: $color;
+  background-color: $bgc;
+}
+$mobile-width: 740px;
+$w3-mobile-width: 601px;
+
+@mixin phone {
+  @media (max-width: #{$w3-mobile-width - 1px}) {
+    @content;
+  }
+}

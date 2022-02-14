@@ -1,0 +1,116 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: none;
+  @extend %center-div-flex;
+
+  background-color: $color-black-2;
+
+  &.open {
+    display: flex;
+  }
+}
+
+.modal__container {
+  width: 900px;
+  max-width: calc(100% - 32px);
+  min-height: 200px;
+
+  background-color: $color-white-1;
+
+  position: relative;
+
+  animation: modalFadeIn ease 0.3s;
+}
+
+.modal__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  color: $color-white-1;
+  cursor: pointer;
+  font-size: $fs-2;
+
+  padding: $pd-4 $pd-3;
+
+  &:hover {
+    color: $color-black-1;
+    background-color: $color-white-1;
+  }
+}
+
+.modal__header {
+  background-color: $color-teal-1;
+  color: $color-white-1;
+
+  display: flex;
+  @extend %center-div-flex;
+
+  height: 130px;
+
+  font-size: $fs-4;
+
+  i {
+    margin-right: $pd-3;
+  }
+}
+
+.modal__body {
+  padding: 0 $pd-3;
+}
+
+.modal__label {
+  display: block;
+  margin: $mg-2 0;
+}
+
+.modal__input {
+  display: block;
+  padding: $pd-4;
+  width: 100%;
+
+  border: 1px solid $color-grey-1;
+}
+
+.modal__footer {
+  padding: 0 $pd-3;
+  display: flex;
+}
+
+#modal__btn-pay {
+  display: block;
+  @include color-bgc($color-white-1, $color-teal-1);
+  width: 100%;
+  padding: $pd-3;
+
+  border: none;
+  margin: $mg-4 0;
+
+  &:hover {
+    @include color-bgc($color-black-1, $color-grey-1);
+  }
+}
+
+.modal__btn-close {
+  @include color-bgc($color-white-1, $color-red-1);
+  border: none;
+  padding: $pd-4 $pd-3;
+  margin: $mg-4 0;
+
+  &:hover {
+    @include color-bgc($color-black-1, $color-grey-1);
+  }
+}
+
+.modal__help {
+  display: inline-block;
+  margin: $mg-2 0 $mg-2 auto;
+  a {
+    color: $color-blue-1;
+  }
+}

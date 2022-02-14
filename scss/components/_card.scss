@@ -1,0 +1,35 @@
+.tour__card {
+  margin: 0 $pd-4;
+  background-color: $color-white-1;
+
+  .card-img {
+    background-color: $color-black-1;
+    img {
+      width: 100%;
+      display: block;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .card-body {
+    padding: 0 $pd-3 $pd-3;
+  }
+
+  .card-title {
+    font-size: $fs-1;
+    margin: $mg-2 0;
+    font-weight: bolder;
+  }
+
+  .card-date {
+    margin: $mg-2 0;
+    opacity: 0.6;
+  }
+
+  .card-text {
+    margin: $mg-2 0;
+  }
+}

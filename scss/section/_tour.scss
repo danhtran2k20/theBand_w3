@@ -1,0 +1,51 @@
+.tour {
+  background-color: $color-black-1;
+}
+
+.tour__tickets {
+  margin-top: $mg-3;
+
+  background-color: $color-white-1;
+  border: 1px solid $color-grey-3;
+
+  li {
+    display: flex;
+    padding: $pd-4 $pd-3;
+    color: $color-grey-2;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-grey-3;
+    }
+  }
+
+  .sold-out {
+    margin-left: $mg-2 + 1;
+    padding: 0 $pd-4;
+
+    @include color-bgc($color-white-1, $color-red-1);
+  }
+
+  .quantity {
+    padding: 0 $pd-4;
+    border-radius: 50%;
+
+    margin: 0 $mg-4 0 auto;
+
+    @include color-bgc($color-white-1, $color-black-1);
+  }
+}
+
+.tour__list {
+  display: flex;
+  margin: $pd-5 (-$pd-4) $pd-7;
+}
+
+@include phone {
+  .tour__list {
+    flex-direction: column;
+    
+    .tour__card {
+      margin-bottom: $mg-4;
+    }
+  }
+}

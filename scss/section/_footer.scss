@@ -1,0 +1,28 @@
+#footer {
+  text-align: center;
+
+  background-color: $color-white-2;
+  opacity: 0.6;
+
+  font-size: $fs-2;
+}
+
+#footer .socials-list {
+  a {
+    text-decoration: none;
+    color: $color-black-1;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+#footer .copyright {
+  margin: $mg-2;
+  font-size: $fs-1;
+
+  a {
+    color: $color-black-1;
+  }
+}

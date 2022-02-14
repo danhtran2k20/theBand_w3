@@ -1,0 +1,31 @@
+#slider {
+  margin-top: 46.4px;
+}
+
+#slider {
+  position: relative;
+  padding-top: 50%;
+}
+
+.slider__content {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  text-align: center;
+
+  color: $color-white-1;
+
+  padding: $pd-5 $pd-3;
+
+  h2 {
+    font-weight: $fw-3;
+    font-size: $fs-2;
+    margin: $mg-1 0;
+  }
+
+  p {
+    font-weight: $fw-2;
+    margin: $mg-2 0;
+  }
+}
